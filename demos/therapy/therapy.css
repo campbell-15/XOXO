@@ -23,7 +23,13 @@ body {
 	background-position: center top;
 	background-size: 100% auto;
 	overflow-x: hidden;
-	-webkit-backface-visibility: hidden;
+	/* -webkit-backface-visibility: hidden; */
+}
+
+.backface-element {
+    -webkit-backface-visibility: hidden; /* Safari, Chrome */
+    -moz-backface-visibility: hidden; /* Firefox */
+    backface-visibility: hidden; /* Standard syntax */
 }
 
 .border-light,
